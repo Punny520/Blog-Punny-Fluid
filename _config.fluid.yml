@@ -1,0 +1,50 @@
+index:
+  banner_img: images/banner_imgs/index.png
+  slogan:
+    enable: true
+    text: Action starts with Passion, Passion rises with Action.
+  auto_excerpt:
+    enable: false
+navbar:
+  blog_title: Punny`s Blog
+custom_css: /css/custom.css
+
+post:
+  banner_img: /images/banner_imgs/post.png
+archive:
+  banner_img: /images/banner_imgs/archive.png
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
+
+fun_features:
+  typing:
+    enable: true
+    scope: [home]
+
+color:
+  # ... 其他配置 ...
+
+  # 文章正文字体色
+  # Color of post text
+  post_text_color: "#e8d5c4"  # 使用暖色调的浅色文字，与深色背景对比明显
+  post_text_color_dark: "#e8d5c4"  # 暗色模式下保持一致
+
+  # 文章正文字体色（h1 h2 h3...）
+  # Color of Article heading (h1 h2 h3...)
+  post_heading_color: "#ffa07a"  # 使用暖橙色，与背景形成对比
+  post_heading_color_dark: "#ffa07a"  # 暗色模式下保持一致
+
+  # 文章超链接字体色
+  # Color of post link
+  post_link_color: "#ffa07a"  # 保持与标题一致的暖橙色
+  post_link_color_dark: "#ffa07a"
+
+favicon: /images/icon/webicon.JPG
+
+footer:
+  content: 
+  statistics:
+    enable: true
+    source: "busuanzi"  # 可选 leancloud | busuanzi  根据自己需求选择
+    pv_format: "总访问量 {} 次"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    uv_format: "总访客数 {} 人"
