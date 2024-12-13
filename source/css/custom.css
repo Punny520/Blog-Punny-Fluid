@@ -1,91 +1,69 @@
-/* 修改整个内容区域的背景色 */
-#board {
-    background-color: rgba(28, 51, 67, 0.9);  /* 稍深的青色半透明 */
-}
-
-/* 修改整个页面的背景色 */
+/* 全局样式 */
 body {
-    background-color: #1a2f3d;  /* 深青蓝色 */
+    background-color: #181c27;  /* 改为指定的深色 */
+    color: #c3ceda;  /* Misty Blue */
 }
 
-/* 为了确保文字清晰可见，建议同时修改文字颜色 */
-.index-card .index-header,
-.index-card .index-excerpt {
-    color: #e8d5c4;  /* 暖色调的浅色文字 */
+#board {
+    background-color: #252d38;  /* 改为指定的颜色，去掉透明效果 */
 }
 
-/* 链接颜色 */
-.index-card a {
-    color: #ffa07a;  /* 暖橙色的链接 */
+/* 文章内容样式 */
+.post-content {
+    color: #c3ceda;  /* Misty Blue */
 }
 
-/* 归档页面样式 */
-.list-group {
-    padding: 20px;
+/* 链接样式 */
+a {
+    color: #738fa7;  /* Blue Gray */
+    transition: color 0.3s ease;
 }
 
-/* 归档总数样式 */
-.list-group p.h4 {
-    color: #FFB6A3;  /* 珊瑚色 */
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+a:hover {
+    color: #c3ceda;  /* Misty Blue */
 }
 
-/* 年份标题样式 */
-.list-group p.h5 {
-    color: #B4E4FF;  /* 天蓝色 */
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-/* 文章列表项样式 */
+/* 归档页面样式调整 */
 .list-group-item {
-    background-color: rgba(28, 51, 67, 0.7);
-    border: none;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    background-color: #252d38;  /* 与board背景保持一致，去掉透明效果 */
     transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    padding: 12px 20px;
 }
 
-/* 文章日期样式 */
-.list-group-item time {
-    color: #B4E4FF;  /* 天蓝色 */
-    font-size: 0.9rem;
-    font-family: 'Monaco', monospace;
-    margin-right: 20px;
-    min-width: 60px;
-}
-
-/* 文章标题样式 */
-.list-group-item-title {
-    color: #FFE4D6;  /* 米白色 */
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    flex-grow: 1;
-}
-
-/* 文章列表项悬停效果 */
 .list-group-item:hover {
-    background-color: rgba(28, 51, 67, 0.9);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* 文章标题悬停效果 */
-.list-group-item:hover .list-group-item-title {
-    color: #FFB6A3;  /* 珊瑚色 */
-    transform: translateX(10px);
+.list-group-item-title {
+    color: #c3ceda;  /* Misty Blue */
 }
 
 /* 分隔线样式 */
 .list-group hr {
-    border-color: rgba(255, 182, 163, 0.3);
-    margin: 20px 0;
+    border-color: #738fa7;  /* Blue Gray */
+    opacity: 0.3;
+}
+
+/* 保留字体设置 */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/ZhuZiAWan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 全局应用字体 */
+body {
+    font-family: 'CustomFont', sans-serif;
+}
+
+/* 针对特定元素应用字体 */
+.post-content,
+.navbar,
+.index-card,
+.post-title,
+.post-meta,
+.markdown-body {
+    font-family: 'CustomFont', sans-serif;
 }
